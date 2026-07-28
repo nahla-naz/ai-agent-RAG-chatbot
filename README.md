@@ -1,5 +1,5 @@
 
-# App name : AI agent RAG chatbot Web app 1.0 (AI assistant)
+# AI agent RAG chatbot Web app 1.0 (AI assistant)
 
 # Description: 
 Chatbot web application which acts as a Customer support AI assistant.
