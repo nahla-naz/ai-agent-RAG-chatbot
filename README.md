@@ -13,7 +13,9 @@ Django
 LLM model: llama3.2
 Embedding model : mxbai-embed-large
 
-# Pre-requisites: Python 3.11
+# Pre-requisites: 
+
+Python 3.11
 
 1. Python libraries to download:
     langchain-ollama
