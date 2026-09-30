@@ -1,7 +1,6 @@
 
 # AI agent RAG chatbot Web app 1.0 (AI assistant) (WIP)
 
-
 # Tools used:
 Langchain
 Ollama
