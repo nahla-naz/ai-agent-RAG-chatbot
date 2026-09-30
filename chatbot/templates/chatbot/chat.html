@@ -65,9 +65,9 @@
   <!-- Chat Box -->
   <div class="chat-wrapper">
     <!-- Header -->
-    <header class="bg-blue-600 text-white px-3 py-2 flex justify-between items-center">
+    <header class="bg-green-900 text-white px-3 py-2 flex justify-between items-center">
       <h1 class="text-sm font-semibold">AI Assistant ✨</h1>
-      <span class="text-[10px] opacity-80">Powered by Llama 3.2</span>
+      <span class="text-[10px] opacity-80">Powered by Llama </span>
     </header>
 
     <!-- Chat Messages -->
@@ -87,9 +87,9 @@
                  name="message"
                  placeholder="Type your question... Tip: Use keywords"
                  required
-                 class="flex-1 border border-gray-300 rounded-full px-2 py-1 focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm placeholder:text-gray-400 placeholder:text-xs" />
+                 class="flex-1 border border-gray-300 rounded-full px-2 py-1 focus:ring-2 focus:ring-green-500 focus:outline-none text-sm placeholder:text-gray-400 placeholder:text-xs" />
           <button type="submit"
-                  class="bg-blue-600 text-white px-3 py-1 rounded-full hover:bg-blue-700 transition text-sm">
+                  class="bg-green-900 text-white px-3 py-1 rounded-full hover:bg-green-700 transition text-sm">
             Send
           </button>
         </form>
@@ -114,7 +114,7 @@
       const userMsg = document.createElement('div');
       userMsg.className = 'flex justify-end';
       userMsg.innerHTML = `
-        <div class="message bg-blue-600 text-white p-2 rounded-lg text-sm shadow-sm">${message}</div>
+        <div class="message bg-green-900 text-white p-2 rounded-lg text-sm shadow-sm">${message}</div>
       `;
       chatBox.appendChild(userMsg);
       input.value = '';

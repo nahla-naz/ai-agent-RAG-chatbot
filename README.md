@@ -1,8 +1,6 @@
 
-# AI agent RAG chatbot Web app 1.0 (AI assistant)
+# AI agent RAG chatbot Web app 1.0 (AI assistant) (WIP)
 
-# Description: 
-Chatbot web application which acts as a Customer support AI assistant.
 
 # Tools used:
 Langchain

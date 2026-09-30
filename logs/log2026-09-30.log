@@ -1,0 +1,4 @@
+2026-09-30 10:57:09 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet` - Line 1732
+2026-09-30 10:58:20 - ERROR - Error occured:Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download. Traceback:None - Line 580
+2026-09-30 11:55:52 - INFO - D:\nahla\4-AI agents\Fin_AI_agent\RAG_agent\RAG_agent\ai-agent-RAG-chatbot_v0.1\chatbot\Agent_resp.py changed, reloading. - Line 265
+2026-09-30 11:56:21 - ERROR - Error occured:Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download. Traceback:None - Line 580

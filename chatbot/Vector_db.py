@@ -34,7 +34,7 @@ try:
         def __init__(self):
             
             self.wd = os.getcwd()
-            self.docs_path = f"{self.wd}\\DOCUMENTS"
+            self.docs_path = f"{self.wd}\\PDF_docs"
 
             self.pdf_path = ""
 
@@ -432,7 +432,7 @@ try:
 
 
              
-            with pdfplumber.open(f".\\DOCUMENTS\\{filename}") as pdf:
+            with pdfplumber.open(f".\\PDF_docs\\{filename}") as pdf:
                 
 
                 for i, page in enumerate(pdf.pages):

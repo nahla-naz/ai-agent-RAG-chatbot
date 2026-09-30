@@ -26,7 +26,7 @@ try:
     from langchain_ollama.llms import OllamaLLM
     from langchain_core.prompts import ChatPromptTemplate
     #from ollamavector_docx3 import retriever
-    from chatbot.Vector_db_New import Embedding_vectors
+    from chatbot.Vector_db import Embedding_vectors
     import time
     #from langchain.evaluation import load_evaluator,  EvaluatorType
     from sentence_transformers import SentenceTransformer, util
@@ -96,7 +96,7 @@ try:
     
     data_descr = ""  
 
-    template = """You are a Customer support assistant having conversation with a user.
+    template = """You are a Support assistant having conversation with a user.
     Rules:
     1. ALWAYS connect question to the below provided chat history to get meaning. 
     2. If the provided data does not have the answer to user's question, ALWAYS ask the user to rephrase question or contact Customer support team for further assistance.
