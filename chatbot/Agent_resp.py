@@ -2,11 +2,16 @@
 
 import traceback
 import logging
-from chatbot.logging_config import setup_logging
+from logging_config import setup_logging
+from configure import read_config
 
 setup_logging("logs","log")
 
+config = read_config()
+ip = config.get('Values', 'ip')
+port = config.get('Values', 'port')
 
+port = int(port)
 
 
 try:
@@ -26,7 +31,7 @@ try:
     from langchain_ollama.llms import OllamaLLM
     from langchain_core.prompts import ChatPromptTemplate
     #from ollamavector_docx3 import retriever
-    from chatbot.Vector_db import Embedding_vectors
+    from Vector_db import Embedding_vectors
     import time
     #from langchain.evaluation import load_evaluator,  EvaluatorType
     from sentence_transformers import SentenceTransformer, util
@@ -35,7 +40,7 @@ try:
     from langchain_core.chat_history import InMemoryChatMessageHistory
     from langchain_core.runnables.history import RunnableWithMessageHistory
 
-    from chatbot.Reports import ReportUpdater
+    from Reports import ReportUpdater
 
     
     #logging.info("Loading embedding model for evaluation...")
@@ -578,3 +583,32 @@ except Exception as e:
     traceback.print_exc()
     
     logging.error(f"Error occured:{e}. Traceback:{traceback.print_exc()}")
+
+
+
+
+
+if __name__ == "__main__":
+
+        try:
+            print(f"\n {time.strftime('%H:%M:%S')} - Initiating RAG Agent backend service....")
+            logging.info("Initiating RAG Agent backend service....")
+
+       
+            #uvicorn.run("App_main:app", host=ip, port=port, reload=True)
+
+            print("RAG Agent backend service URL:")
+            for route in app.routes:
+        
+                print(f"{route.path} -> {route.methods}")
+
+
+            uvicorn.run("App_main:app", host=ip, port=port, reload=True)
+
+            
+        except Exception as e:
+      
+                print("Error occured:",e)
+                traceback.print_exc()
+                
+                logging.error(f"Error occured:{e}. Traceback:{traceback.print_exc()}")
